@@ -1,5 +1,16 @@
+Create Table 1
 function insert_Row() {
-    //Write your code here
-  
-  
+    // Get table element by its ID
+    let table = document.getElementById("sampleTable");
+
+    
+    let newRow = table.insertRow(0);
+
+   
+    let cell1 = newRow.insertCell(0);
+    let cell2 = newRow.insertCell(1);
+
+    
+    cell1.textContent = "New Cell1";
+    cell2.textContent = "New Cell2";
 }
